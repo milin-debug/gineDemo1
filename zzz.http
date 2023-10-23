@@ -1,0 +1,18 @@
+
+
+#without 
+#  GET http://localhost:8080/companies HTTP/1.1
+
+
+#
+### with auth
+POST http://localhost:1060/api/auth/register HTTP/2.0
+Content-Type: application/json
+{
+    "telephone":18733619897
+}
+
+
+### with auth
+POST http://localhost:8080/companies HTTP/2.0
+Authorization: aadfsafds
